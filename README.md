@@ -145,15 +145,13 @@ mongo-collections-1-build                                         0/1     Comple
 mongo-collections-5f778dbbb8-5pd9x                                1/1     Running     0          76s 
 ```
 Now check your service for mongo-collections app and expose your service
- 
-`[root@p1299-bastion Mongo-Collections-master]# oc get svc -o name
+
+```
+[root@p1299-bastion Mongo-Collections-master]# oc get svc -o name
 service/helm-mongo-ibm-mongodb-enterprise-helm-service
 service/mongo-collections
-[root@p1299-bastion Mongo-Collections-master]# oc expose svc/mongo-collections
-route.route.openshift.io/mongo-collections exposed `
+[root@p1299-bastion Mongo-Collections-master]# oc expose svc/mongo-collections --port=8677
+route.route.openshift.io/mongo-collections exposed
 ```
 
-
-  
-
-
+Now try to access application from a browser
