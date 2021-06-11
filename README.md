@@ -164,6 +164,7 @@ Make sure you have installed mongodb in your RedHat OpenShift platform before tr
 
 In this application, I had tried to create an employee management system which will do basic operations like adding employee, updating employee, removing employee etc.
 
+# Working with Application
 
 Now try to access application from a browser or use cUrl or Postman or any other support tool. I had used cUrl for this demo.
 
@@ -174,8 +175,8 @@ Use below command for adding employee
     "name": "john",
     "dept": "Techline",
     "age": "28"
-}
-' http://mongo-collections-sivaram.apps.p1299.cecc.ihost.com/employee/add `
+}'
+http://mongo-collections-sivaram.apps.p1299.cecc.ihost.com/employee/add `
 
 `Output/Response: {"id":"60af3e15f427b06c8c2d6430","name":"john","dept":"Techline","age":28}`
 
@@ -265,5 +266,8 @@ MongoDB Enterprise > db.employee.find()
 { "_id" : ObjectId("60af429df427b06c8c2d6432"), "name" : "Raju", "dept" : "Mgmt", "age" : 34, "_class" : "com.example.mongodb.demo.model.Employee" }
 MongoDB Enterprise >
 ```
+
+# Note: 
+Snapshots are available for this application under snapshot directory.
 
 # Thank you!!
