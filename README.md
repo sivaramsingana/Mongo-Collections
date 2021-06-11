@@ -36,7 +36,7 @@ get list of image streams available in your namespace using below command
  Create a new build for you application mongo-collections
  ```
  [root@p1299-bastion Mongo-Collections-master]# oc new-build --binary=true --name=mongo-collections --image-stream=ubi8-openjdk-11:1.3
---> Found image f726d5b (5 weeks old) in image stream "sivaram/ubi8-openjdk-11:1.3" under tag "latest" for "ubi8-openjdk-11:1.3"
+--> Found image f726d5b (5 weeks old) in image stream "sivaram/ubi8-openjdk-11" under tag "1.3" for "ubi8-openjdk-11:1.3"
 
     Java Applications
     -----------------
