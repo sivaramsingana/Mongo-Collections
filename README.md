@@ -12,7 +12,8 @@ Redhat provides different options to build and deploy applications. Here I am us
 
 # Source code
 Clone the source code from below github repository.
-`https://github.com/sivaramsingana/Mongo-Collections/`
+
+`git clone https://github.com/sivaramsingana/Mongo-Collections/`
 
 Get the JAR application archive or build the application locally from below github repository
 
@@ -34,8 +35,8 @@ get list of image streams available in your namespace using below command
  
  Create a new build for you application mongo-collections
  ```
- [root@p1299-bastion Mongo-Collections-master]# oc new-build --binary=true --name=mongo-collections --image-stream=openjdk18-openshift
---> Found image f726d5b (5 weeks old) in image stream "sivaram/openjdk18-openshift" under tag "latest" for "openjdk18-openshift"
+ [root@p1299-bastion Mongo-Collections-master]# oc new-build --binary=true --name=mongo-collections --image-stream=ubi8-openjdk-11:1.3
+--> Found image f726d5b (5 weeks old) in image stream "sivaram/ubi8-openjdk-11:1.3" under tag "latest" for "ubi8-openjdk-11:1.3"
 
     Java Applications
     -----------------
