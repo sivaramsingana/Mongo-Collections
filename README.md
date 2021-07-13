@@ -160,7 +160,7 @@ Make sure you have installed mongodb in your RedHat OpenShift platform before tr
 
 # Mongo Container deployment on OCP:
 
-`https://github.com/redhat-developer/redhat-helm-charts/tree/master/stable/ibm-mongodb-enterprise-helm `
+https://github.com/redhat-developer/redhat-helm-charts/tree/master/stable/ibm-mongodb-enterprise-helm
 
 In this application, I had tried to create an employee management system which will do basic operations like adding employee, updating employee, removing employee etc.
 
