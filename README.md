@@ -8,18 +8,26 @@ Redhat provides different options to build and deploy applications. Here I am us
 # Note: 
 
 1) Make sure you had tested and build you code before proceeding to deploy application.
-2) Add your mongodb installation/pod details in application.properties file.
+2) Add your mongodb installation/pod details in application.properties file located at src/main/resources folder.
+3) Use Java 11 version to compile/build Jar File.
+
+# Instructions for setting up JAVA and JAVA_HOME
+
+1) Run this command to see java options availabe 'alternatives --config java'
+2) choose the java version sutiable to your application
+3) export JAVA_HOME=Path to Java version(See step1 for path) 
+
 
 # Source code
 Clone the source code from below github repository.
 
 `git clone https://github.com/sivaramsingana/Mongo-Collections/`
 
-Get the JAR application archive or build the application locally from below github repository
+Get the JAR archive or build the application locally from below github repository
 
 # Building your Application
 
-Try to run `mvn clean package` to build your code.After this step is completed, A jar file will be generated in targer folder/directory.
+Try to run `mvn clean package` to build your code.After this step is completed, A jar file will be generated in target folder/directory.
 
 # Deploy your application to RedHat OpenShift
 Create new directory and copy jar file from target folder/directory to newly created directory.
